@@ -1,0 +1,78 @@
+header {
+  font-size: 1.3em;
+  background-color: #f0aecc;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+h1,
+p {
+  font-family: "Lobster", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin-top: 0px;
+}
+
+.buttonMenu {
+  font-family: "Lobster", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#card-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 18px;
+  margin: 18px;
+  width: 16%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.card span {
+  padding: 0 0 0 30px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+#request-artist {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#newsletterForm {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 96%;
+  height: 2em;
+}
+
+footer {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="author" content="Sohyeon Kim" />
+
+    <title>WEB222 Music App</title>
+    <link rel="stylesheet" href="./css/water.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Go K-POP</h1>
+      <p>Meet the hottest artist in Korea!!!</p>
+    </header>
+
+    <div id="request-artist">
+      <h2>Request a New Artist</h2>
+      <form id="artistRequestForm" action="https://httpbin.org/post" method="post">
+        <label for="artist-name">Artist's Name:</label>
+        <input type="text" id="artist-name" name="artist-name" required />
+
+        <label for="music-genre">Music Genre:</label>
+        <input list="genres" id="music-genre" name="music-genre" required />
+        <datalist id="genres">
+          <option value="Pop"></option>
+          <option value="Rock"></option>
+          <option value="Hip Hop"></option>
+          <option value="Country"></option>
+          <option value="Jazz"></option>
+          <option value="Electronic"></option>
+          <option value="R&B"></option>
+          <option value="Classical"></option>
+          <option value="Reggae"></option>
+          <option value="Metal"></option>
+        </datalist>
+
+        <label for="social-media-urls">Social Media URLs:</label>
+        <input type="url" id="social-media-urls" name="social-media-urls" multiple />
+
+        <label for="song-video-links">Example Songs/Videos:</label>
+        <div id="song-video-links-container">
+          <input type="url" name="song-video-link[]" required />
+        </div>
+        <button class="buttonMenu" type="button" id="add-link">Add</button>
+
+        <br />
+        <label>
+          <input type="checkbox" name="explicit-lyrics" /> This song contains explicit lyrics
+        </label>
+
+        <br />
+        <label for="artist-description">Why should this artist be added?</label>
+        <textarea id="artist-description" name="artist-description" rows="5" required></textarea>
+
+        <button id="re-submitButton" class="buttonMenu" type="submit">Submit Request</button>
+        <button id="backButton" class="buttonMenu" type="button">BACK</button>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("add-link").addEventListener("click", function () {
+        var container = document.getElementById("song-video-links-container");
+        var input = document.createElement("input");
+        input.type = "url";
+        input.name = "song-video-link[]";
+        container.appendChild(input);
+      });
+
+      document.getElementById("backButton").addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
