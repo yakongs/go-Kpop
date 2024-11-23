@@ -21,7 +21,7 @@
 
 ## 🖼️ Screenshots
 ![screenshot](screenshot.png)
-<br>
+<br><br>
 
 ## 📂 Project Structure
 ```plaintext
