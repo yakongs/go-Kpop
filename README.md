@@ -4,19 +4,19 @@
 <br>
 
 ## 🚀 Features
-- 🎥 **YouTube Redirection**: Click on any card to open the YouTube page for the specific song.
-- 🔄 **Dynamic Artist Updates**: Use the buttons to update the list of songs for a specific artist.
+- 🎥 **YouTube Integration**: Click on any card to open the YouTube page for the specific song.
+- 🔄 **Dynamic Artist Updates**: Use the buttons to refresh the song list for a selected artist.
 - 🌐 **Social Links**: Access the artist's official website, Wikipedia, and Instagram through hyperlinks.
-- 📝 **Artist Request Form**: Submit a request for new artists (UI implemented, request submission not yet functional).
+- 📝 **Artist Request Form**: Request new artists through the form (Backend functionality in progress).
 <br>
 
 ## 📖 Usage
 
 1. Open the app in your browser.
-2. Click on a card to open the YouTube page for the specific song.
+2. Click on a song card to open its YouTube page.
 3. Use the artist buttons to dynamically update the song list for the selected artist.
 4. Click on the social links (Website, Wikipedia, Instagram) for more information about each artist.
-5. Use the Request Artist button to open the artist request form (feature implementation in progress).
+5. Use the Request Artist button to open the artist request form (**feature coming soon**).
 <br>
 
 ## 🖼️ Screenshots
@@ -32,12 +32,12 @@ src/                 # Source code for the application
 │   ├── water.css    # CSS framework that provides basic styling
 ├── js/              # JavaScript files for functionality
 │   ├── app.js       # Core application logic
-│   ├── artists.js   # The app's list of Artists
+│   ├── artists.js   # The app's list of artists
 │   ├── songs.js     # The app's list of songs
 ├── index.html       # Main HTML file
 ├── request.html     # Request form HTML file
 .eslintrc.js         # ESLint configuration for code quality
-.gitignore           # Ignored files for Git
+.gitignore           # Files to be ignored by Git
 .prettierrc.js       # Prettier configuration for code formatting
 README.md            # Project documentation
 package-lock.json    # Exact dependency versions
